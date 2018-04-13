@@ -11,7 +11,8 @@ import re # regex
 bookpath = "https://raw.githubusercontent.com/safesoftware/FMETraining/"
 branch = "Desktop-Basic-2018/" # update for current branch/version
 
-# download md files from other books, edit their image paths, save to this book
+# download md files from other books, create new folders if needed,
+# edit their image paths, save to this book
 with open('chapters.csv', 'r') as csvfile: # open csv
     next(csvfile, None) # skip header
     data = csv.reader(csvfile, delimiter=',') # define csvreader
@@ -23,6 +24,8 @@ with open('chapters.csv', 'r') as csvfile: # open csv
             #download md file
             md.retrieve(bookpath + branch + row[7], row[8] + "_read.md")
             md_read = open(row[8] + "_read.md","r") # open downloaded md file
+            if not os.path.exists(row[5]):
+                os.makedirs(row[5])
             md_write = open(row[8],"w") # new temp write md file
             for line in md_read: # iterate on md file lines
                 # replace relative with absolute paths
