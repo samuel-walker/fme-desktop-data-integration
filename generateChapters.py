@@ -64,9 +64,12 @@ with open('chapters.csv', 'r') as csvfile: # open csv
                 line = line.replace("](./", "](../" + row[7].split("/")[0] + "/")
                 if "](../" in line:
                     img = line[6:-2]
+                    imgsplit = img.rsplit('/', 1)[-1]
+                    print img
+                    print imgsplit
                     # img = urllib.URLopener() # start url reader for img
                     # download image
-                    urllib.urlretrieve(bookpath + branch + row[7] + img, img)
+                    urllib.urlretrieve(bookpath + branch + row[0] + "Images/" + imgsplit, row[5] + "/Images/" + imgsplit)
                     # img_write = open(img,"w") # new temp write md file
                     # img_write.write(line) # print new line in temp file
                 md_write.write(line) # print new line in temp file
