@@ -23,35 +23,6 @@ with open('chapters.csv', 'r') as csvfile: # open csv
             # check if dir exists, make it if not
             if not os.path.exists(row[5]):
                 os.makedirs(row[5])
-            md = urllib.URLopener() # start url reader
-            # download md file
-            md.retrieve(bookpath + branch + row[7], row[8] + "_read.md")
-            md_read = open(row[8] + "_read.md","r") # open downloaded md file
-            md_write = open(row[8],"w") # new temp write md file
-            for line in md_read: # iterate on md file lines
-                # edit image paths
-                line = line.replace("](./", "](../" + row[7].split("/")[0] + "/")
-                md_write.write(line) # print new line in temp file
-            # identify and download required images
-            for line in md_read:
-                pat = line.find("](../")
-                img = pat.findall(md_read)
-            md_write.close() # close temp file
-            md_read.close() # close md file
-            os.remove(row[8] + "_read.md")
-
-
-
-with open('chapters.csv', 'r') as csvfile: # open csv
-    next(csvfile, None) # skip header
-    data = csv.reader(csvfile, delimiter=',') # define csvreader
-    for row in data: # iterate on urls to generate chapters
-        if row[0] == "":
-            pass
-        else:
-            # check if dir exists, make it if not
-            if not os.path.exists(row[5]):
-                os.makedirs(row[5])
             if not os.path.exists(row[5] + "/Images"):
                 os.makedirs(row[5] + "/Images")
             md = urllib.URLopener() # start url reader
@@ -60,13 +31,13 @@ with open('chapters.csv', 'r') as csvfile: # open csv
             md_read = open(row[8] + "_read.md","r") # open downloaded md file
             md_write = open(row[8],"w") # new temp write md file
             for line in md_read: # iterate on md file lines
-                # edit image paths
-                line = line.replace("](./", "](../" + row[7].split("/")[0] + "/")
+                # edit image paths [note: currently for FME training, CHANGE]
+                # line = line.replace("](./", "](../" + row[7].split("/")[0] + "/")
                 if "](../" in line:
-                    img = line[6:-2]
-                    imgsplit = img.rsplit('/', 1)[-1]
-                    print img
-                    print imgsplit
+                    # img = line[6:-2]
+                    imgsplit = line[6:-2].rsplit('/', 1)[-1]
+                    # print img
+                    # print imgsplit
                     # img = urllib.URLopener() # start url reader for img
                     # download image
                     urllib.urlretrieve(bookpath + branch + row[0] + "Images/" + imgsplit, row[5] + "/Images/" + imgsplit)
