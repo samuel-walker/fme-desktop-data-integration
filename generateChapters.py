@@ -1,17 +1,17 @@
-# For python 2.7
+#!/usr/bin/env
 
 # import required modules
 import os # lib for operating system operations
 import csv # lib for reading csv
-import urllib  # lib for reading url as file
+import requests  # lib for reading url as file
 import re # regex
-import time # to get sleep function to avoid API rate limits
-import wget # to download raw github images
+import wget
 
 # define variables
 # update bookpath if repo changes
 bookpath = "https://raw.githubusercontent.com/safesoftware/FMETraining/"
 branch = "Desktop-Basic-2018/" # update for current branch/version
+rawgit = "https://cdn.rawgit.com/safesoftware/FMETraining/"
 
 # download md files from other books, create new folders if needed,
 # edit their image paths, save to this book
@@ -27,38 +27,34 @@ with open('chapters.csv', 'r') as csvfile: # open csv
                 os.makedirs(row[5])
             if not os.path.exists(row[5] + "/Images"):
                 os.makedirs(row[5] + "/Images")
-            md = urllib.URLopener() # start url reader
             # download md file
-            md.retrieve(bookpath + branch + row[7], row[8] + "_read.md")
-            md_read = open(row[8] + "_read.md","r") # open downloaded md file
-            md_write = open(row[8],"w") # new temp write md file
+            url = bookpath + branch + row[7] # form url
+            # r = requests.get(url, allow_redirects=True) # make request
+            # md_read = open(row[8] + "_read.md", 'r').write(r.text)
+            if not os.path.exists(row[8]):
+                wget.download(url, row[8])
+            md_read = open(row[8], encoding="utf8")
+            # download images
             for line in md_read: # iterate on md file lines
-                # edit image paths [note: currently for FME training, CHANGE]
-                # line = line.replace("](./", "](../" + row[7].split("/")[0] + "/")
-                # edit image paths
-                line = line.replace("](./", "](/" + row[5] + "/")
+                # print(line)
                 if "](/" in line: # look for images by line
-                    # img = line[6:-2]
                     imgsplit = line[6:-2].rsplit('/', 1)[-1] # grab image filename
-                    # print img
-                    # print imgsplit
-                    # img = urllib.URLopener() # start url reader for img
-                    # download image
-                    print bookpath + branch + row[0] + "/Images/" + imgsplit + " downloading to " + row[5] + "/Images/" + imgsplit
-                    # download using urllib, doesn't work, likely rate limited
-                    # urllib.urlretrieve(bookpath + branch + row[0] + "Images/" + imgsplit, row[5] + "/Images/" + imgsplit)
-                    time.sleep(10)
-                    # img_write = open(img,"w") # new temp write md file
-                    # img_write.write(line) # print new line in temp file
-                md_write.write(line) # print new line in temp file
-            # identify and download required images
-            # pat = re.compile("\]\(\.\.\/.*\)")
-            # for line in md_read:
-            #     img = pat.find(line)
-            # print img
-            md_write.close() # close temp file
-            md_read.close() # close md file
-            os.remove(row[8] + "_read.md")
+                    print(bookpath + branch + row[0] + "/Images/" + imgsplit + " downloading to " + row[5] + "/Images/" + imgsplit)
+                    # download using requests, doesn't work, likely rate limited
+                    url = bookpath + branch + row[0] + "/Images/" + imgsplit # form url
+                    # r = requests.get(url, allow_redirects=True) # make request
+                    # open(row[5] + "/Images/" + imgsplit, 'wb').write(r.content) # write content
+                    if not os.path.exists(row[5] + "/Images/" + imgsplit):
+                        print(url + " to " + row[5] + "/Images/" + imgsplit)
+                        wget.download(url, row[5] + "/Images/" + imgsplit)
+
+# working wget
+
+# url = 'https://raw.githubusercontent.com/safesoftware/FMETraining/Desktop-Basic-2018/DesktopBasic1Basics/Images/Img1.000.TranslationIntro.png'
+# wget.download(url, 'C:/Users/swalker/Documents/GitHub/fme-desktop-data-integration/test.png')
+
+# url = "https://raw.githubusercontent.com/safesoftware/FMETraining/Desktop-Basic-2018/DesktopBasic1Basics/Images/Img1.001.WhatIsFME.png"
+# wget.download(url, "Integration1Lecture/Images/Img1.001.WhatIsFME.png")
 
 # generate summary.md to create book structure
 summary = open("SUMMARY.md","w") # open summary.md to write
