@@ -5,6 +5,8 @@ import os # lib for operating system operations
 import csv # lib for reading csv
 import urllib  # lib for reading url as file
 import re # regex
+import time # to get sleep function to avoid API rate limits
+import wget # to download raw github images
 
 # define variables
 # update bookpath if repo changes
@@ -33,14 +35,19 @@ with open('chapters.csv', 'r') as csvfile: # open csv
             for line in md_read: # iterate on md file lines
                 # edit image paths [note: currently for FME training, CHANGE]
                 # line = line.replace("](./", "](../" + row[7].split("/")[0] + "/")
-                if "](../" in line:
+                # edit image paths
+                line = line.replace("](./", "](/" + row[5] + "/")
+                if "](/" in line: # look for images by line
                     # img = line[6:-2]
-                    imgsplit = line[6:-2].rsplit('/', 1)[-1]
+                    imgsplit = line[6:-2].rsplit('/', 1)[-1] # grab image filename
                     # print img
                     # print imgsplit
                     # img = urllib.URLopener() # start url reader for img
                     # download image
-                    urllib.urlretrieve(bookpath + branch + row[0] + "Images/" + imgsplit, row[5] + "/Images/" + imgsplit)
+                    print bookpath + branch + row[0] + "/Images/" + imgsplit + " downloading to " + row[5] + "/Images/" + imgsplit
+                    # download using urllib, doesn't work, likely rate limited
+                    # urllib.urlretrieve(bookpath + branch + row[0] + "Images/" + imgsplit, row[5] + "/Images/" + imgsplit)
+                    time.sleep(10)
                     # img_write = open(img,"w") # new temp write md file
                     # img_write.write(line) # print new line in temp file
                 md_write.write(line) # print new line in temp file
@@ -52,7 +59,6 @@ with open('chapters.csv', 'r') as csvfile: # open csv
             md_write.close() # close temp file
             md_read.close() # close md file
             os.remove(row[8] + "_read.md")
-
 
 # generate summary.md to create book structure
 summary = open("SUMMARY.md","w") # open summary.md to write
