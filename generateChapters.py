@@ -11,10 +11,8 @@ import wget
 # update bookpath if repo changes
 bookpath = "https://raw.githubusercontent.com/safesoftware/FMETraining/"
 branch = "Desktop-Basic-2018/" # update for current branch/version
-rawgit = "https://cdn.rawgit.com/safesoftware/FMETraining/"
 
-# download md files from other books, create new folders if needed,
-# edit their image paths, save to this book
+# download md files and images from other books based on csv structure
 with open('chapters.csv', 'r') as csvfile: # open csv
     next(csvfile, None) # skip header
     data = csv.reader(csvfile, delimiter=',') # define csvreader
