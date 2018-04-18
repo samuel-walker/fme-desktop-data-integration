@@ -19,41 +19,30 @@ with open('chapters.csv', 'r') as csvfile: # open csv
     next(csvfile, None) # skip header
     data = csv.reader(csvfile, delimiter=',') # define csvreader
     for row in data: # iterate on urls to generate chapters
-        if row[0] == "":
+        if row[0] == "": # don't worry about sections not in other books
             pass
         else:
-            # check if dir exists, make it if not
+            # check if directory exists, make it if not
             if not os.path.exists(row[5]):
                 os.makedirs(row[5])
             if not os.path.exists(row[5] + "/Images"):
                 os.makedirs(row[5] + "/Images")
             # download md file
             url = bookpath + branch + row[7] # form url
-            # r = requests.get(url, allow_redirects=True) # make request
-            # md_read = open(row[8] + "_read.md", 'r').write(r.text)
-            if not os.path.isfile(row[8]):
-                wget.download(url, row[8])
+            if not os.path.isfile(row[8]): # check if file already exists
+                wget.download(url, row[8]) # if not, download it
+            # download images
             with open(row[8], encoding="utf8") as md_read:
-                # download images
                 for line in md_read: # iterate on md file lines
                     if "](./" in line: # look for images by line
-                        imgsplit = line[6:-2].rsplit('/', 1)[-1] # grab image filename
-                        print(bookpath + branch + row[0] + "/Images/" + imgsplit + " downloading to " + row[5] + "/Images/" + imgsplit)
-                        # download using requests, doesn't work, likely rate limited
-                        url = bookpath + branch + row[0] + "/Images/" + imgsplit # form url
-                        # r = requests.get(url, allow_redirects=True) # make request
-                        # open(row[5] + "/Images/" + imgsplit, 'wb').write(r.content) # write content
+                        # grab image filename
+                        imgsplit = line[6:-2].rsplit('/', 1)[-1]
+                        # form url
+                        url = bookpath + branch + row[0] + "/Images/" + imgsplit
+                        # check if file already exists
                         if not os.path.exists(row[5] + "/Images/" + imgsplit):
-                            print(url + " to " + row[5] + "/Images/" + imgsplit)
+                            # if not, download it
                             wget.download(url, row[5] + "/Images/" + imgsplit)
-
-# working wget
-
-# url = 'https://raw.githubusercontent.com/safesoftware/FMETraining/Desktop-Basic-2018/DesktopBasic1Basics/Images/Img1.000.TranslationIntro.png'
-# wget.download(url, 'C:/Users/swalker/Documents/GitHub/fme-desktop-data-integration/test.png')
-
-# url = "https://raw.githubusercontent.com/safesoftware/FMETraining/Desktop-Basic-2018/DesktopBasic1Basics/Images/Img1.001.WhatIsFME.png"
-# wget.download(url, "Integration1Lecture/Images/Img1.001.WhatIsFME.png")
 
 # generate summary.md to create book structure
 summary = open("SUMMARY.md","w") # open summary.md to write
