@@ -31,22 +31,21 @@ with open('chapters.csv', 'r') as csvfile: # open csv
             url = bookpath + branch + row[7] # form url
             # r = requests.get(url, allow_redirects=True) # make request
             # md_read = open(row[8] + "_read.md", 'r').write(r.text)
-            if not os.path.exists(row[8]):
+            if not os.path.isfile(row[8]):
                 wget.download(url, row[8])
-            md_read = open(row[8], encoding="utf8")
-            # download images
-            for line in md_read: # iterate on md file lines
-                # print(line)
-                if "](/" in line: # look for images by line
-                    imgsplit = line[6:-2].rsplit('/', 1)[-1] # grab image filename
-                    print(bookpath + branch + row[0] + "/Images/" + imgsplit + " downloading to " + row[5] + "/Images/" + imgsplit)
-                    # download using requests, doesn't work, likely rate limited
-                    url = bookpath + branch + row[0] + "/Images/" + imgsplit # form url
-                    # r = requests.get(url, allow_redirects=True) # make request
-                    # open(row[5] + "/Images/" + imgsplit, 'wb').write(r.content) # write content
-                    if not os.path.exists(row[5] + "/Images/" + imgsplit):
-                        print(url + " to " + row[5] + "/Images/" + imgsplit)
-                        wget.download(url, row[5] + "/Images/" + imgsplit)
+            with open(row[8], encoding="utf8") as md_read:
+                # download images
+                for line in md_read: # iterate on md file lines
+                    if "](./" in line: # look for images by line
+                        imgsplit = line[6:-2].rsplit('/', 1)[-1] # grab image filename
+                        print(bookpath + branch + row[0] + "/Images/" + imgsplit + " downloading to " + row[5] + "/Images/" + imgsplit)
+                        # download using requests, doesn't work, likely rate limited
+                        url = bookpath + branch + row[0] + "/Images/" + imgsplit # form url
+                        # r = requests.get(url, allow_redirects=True) # make request
+                        # open(row[5] + "/Images/" + imgsplit, 'wb').write(r.content) # write content
+                        if not os.path.exists(row[5] + "/Images/" + imgsplit):
+                            print(url + " to " + row[5] + "/Images/" + imgsplit)
+                            wget.download(url, row[5] + "/Images/" + imgsplit)
 
 # working wget
 
