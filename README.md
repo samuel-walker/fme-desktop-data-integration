@@ -28,12 +28,13 @@ This module is designed to be delivered as an hour lecture and lab demonstration
 
 ## Adapting this Module
 
-All of this content is provided for instructors to use, adapt, and remix for their own modules. Please note that this use does come with some legal caveats, explained in [About this Document](/CADGIS0About/0.00.AboutThisDocument.md).
+All of this content is provided for instructors to use, adapt, and remix for their own modules. Please note that this use does come with some legal caveats, explained in [About this Document](/Integration0About/0.00.AboutThisDocument.md).
 
 If you wish to change the content of the manual, you can fork the [GitHub repository](). The manual is created using the [Gitbook toolchain](https://toolchain.gitbook.com/) and is written in easily editable [Markdown](https://daringfireball.net/projects/markdown/). [Detailed instructions on adapting this content]() are also available.
 
 Some suggestions for adaptation:
 - Localize the exercise data to your country or city. A list of open data portals is available [here](https://www.opendatasoft.com/a-comprehensive-list-of-all-open-data-portals-around-the-world/).
+  - If you do change the data, feel free to modify the [Module Resources](Integration0About\0.02.CourseResources.md) page.
 - If it fits your course better, you could choose a single data integration scenario. If you prefer to grade close-ended questions, you could write those for one or more scenarios. You could also restrict the datasets or provide a data integration problem to solve rather then leaving it open for students to choose.
 
 ## Current Status
@@ -51,4 +52,4 @@ The status of each chapter is:
 * Module Outline: Incomplete
 * FMEData: Incomplete
 
-_**NB**: Even for completed content, Safe Software Inc. assumes no responsibility for any errors in this document or their consequences, and reserves the right to make improvements and changes to this document without notice. See the full licensing agreement in [About this Document](/CADGIS0About/0.00.AboutThisDocument.md) for further details._
+_**NB**: Even for completed content, Safe Software Inc. assumes no responsibility for any errors in this document or their consequences, and reserves the right to make improvements and changes to this document without notice. See the full licensing agreement in [About this Document](/Integration0About/0.00.AboutThisDocument.md) for further details._

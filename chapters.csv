@@ -1,7 +1,7 @@
 source_folder,source_file,chapter,section,file,destination_folder,destination_file,source,destination
 ,AboutThisDocument,0,0,00,Integration0About,0.00.AboutThisDocument.md,,Integration0About/0.00.AboutThisDocument.md
-,CourseOverview,0,1,01,Integration0About,0.01.CourseOverview.md,,Integration0About/0.01.CourseOverview.md
-,CourseResources,0,1,02,Integration0About,0.02.CourseResources.md,,Integration0About/0.02.CourseResources.md
+,ModuleOverview,0,1,01,Integration0About,0.01.ModuleOverview.md,,Integration0About/0.01.ModuleOverview.md
+,ModuleResources,0,1,02,Integration0About,0.02.ModuleResources.md,,Integration0About/0.02.ModuleResources.md
 ,Lecture,1,0,00,Integration1Lecture,1.00.Lecture.md,,Integration1Lecture/1.00.Lecture.md
 ,DataIntegration,1,1,01,Integration1Lecture,1.01.DataIntegration.md,,Integration1Lecture/1.01.DataIntegration.md
 DesktopBasic1Basics,1.01.WhatIsFME.md,1,1,02,Integration1Lecture,1.02.WhatIsFME.md,DesktopBasic1Basics/1.01.WhatIsFME.md,Integration1Lecture/1.02.WhatIsFME.md
