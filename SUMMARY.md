@@ -1,4 +1,4 @@
-# Summary 
+# Summary
 
 * [About This Document](Integration0About/0.00.AboutThisDocument.md)
   * [Course Overview](Integration0About/0.01.CourseOverview.md)
@@ -9,10 +9,10 @@
   * [Data Transformation](Integration1Lecture/1.03.DataTransformation.md)
     * [What Is Data Transformation](Integration1Lecture/1.04.WhatIsDataTransformation.md)
 * [Lab Demonstration](Integration2LabDemonstration/2.00.LabDemonstration.md)
-  * [FMEDesktop Components](Integration2LabDemonstration/2.01.FMEDesktopComponents.md)
+  * [FME Desktop Components](Integration2LabDemonstration/2.01.FMEDesktopComponents.md)
   * [Introduction To Workbench](Integration2LabDemonstration/2.02.IntroductionToWorkbench.md)
     * [Window Control](Integration2LabDemonstration/2.03.WindowControl.md)
-    * [Creating ATranslation](Integration2LabDemonstration/2.04.CreatingATranslation.md)
+    * [Creating A Translation](Integration2LabDemonstration/2.04.CreatingATranslation.md)
     * [The New Workspace](Integration2LabDemonstration/2.05.TheNewWorkspace.md)
     * [Running The Workspace](Integration2LabDemonstration/2.06.RunningTheWorkspace.md)
   * [What Is Data Inspection](Integration2LabDemonstration/2.07.WhatIsDataInspection.md)
@@ -35,7 +35,7 @@
   * [Data Inspection From Workbench](Integration2LabDemonstration/2.24.DataInspectionFromWorkbench.md)
   * [Coordinate System Transformation](Integration2LabDemonstration/2.25.CoordinateSystemTransformation.md)
 * [Lab Exercises](Integration3LabExercises/3.00.LabExercises.md)
-  * [Getting Started With FMEDesktop](Integration3LabExercises/3.01.GettingStartedWithFMEDesktop.md)
+  * [Getting Started With FME Desktop](Integration3LabExercises/3.01.GettingStartedWithFMEDesktop.md)
     * [Exercise1](Integration3LabExercises/3.02.Exercise1.md)
     * [Exercise2](Integration3LabExercises/3.03.Exercise2.md)
     * [Exercise3](Integration3LabExercises/3.04.Exercise3.md)
