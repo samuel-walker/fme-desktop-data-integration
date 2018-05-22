@@ -1,8 +1,8 @@
-# Summary
+# Summary 
 
 * [About This Document](Integration0About/0.00.AboutThisDocument.md)
-  * [Course Overview](Integration0About/0.01.CourseOverview.md)
-  * [Course Resources](Integration0About/0.02.CourseResources.md)
+  * [Module Overview](Integration0About/0.01.ModuleOverview.md)
+  * [Module Resources](Integration0About/0.02.ModuleResources.md)
 * [Lecture](Integration1Lecture/1.00.Lecture.md)
   * [Data Integration](Integration1Lecture/1.01.DataIntegration.md)
   * [What Is FME](Integration1Lecture/1.02.WhatIsFME.md)
@@ -34,6 +34,15 @@
   * [Group By Processing](Integration2LabDemonstration/2.23.GroupByProcessing.md)
   * [Data Inspection From Workbench](Integration2LabDemonstration/2.24.DataInspectionFromWorkbench.md)
   * [Coordinate System Transformation](Integration2LabDemonstration/2.25.CoordinateSystemTransformation.md)
+  * [Integrated Inspection](Integration2LabDemonstration/2.26.IntegratedInspection.md)
+  * [Partial Runs](Integration2LabDemonstration/2.27.PartialRuns.md)
+  * [Style](Integration2LabDemonstration/2.28.Style.md)
+    * [Annotating Workspaces](Integration2LabDemonstration/2.29.AnnotatingWorkspaces.md)
+    * [Bookmarks](Integration2LabDemonstration/2.30.Bookmarks.md)
+      * [Bookmarks For Design](Integration2LabDemonstration/2.31.BookmarksForDesign.md)
+      * [Bookmarks For Access](Integration2LabDemonstration/2.32.BookmarksForAccess.md)
+      * [Bookmarks For Editing](Integration2LabDemonstration/2.33.BookmarksForEditing.md)
+      * [Bookmarks For Performance](Integration2LabDemonstration/2.34.BookmarksForPerformance.md)
 * [Lab Exercises](Integration3LabExercises/3.00.LabExercises.md)
   * [Getting Started With FME Desktop](Integration3LabExercises/3.01.GettingStartedWithFMEDesktop.md)
     * [Exercise1](Integration3LabExercises/3.02.Exercise1.md)
