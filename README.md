@@ -1,6 +1,6 @@
-# FME Desktop Training Module: GIS and CAD Integration
+# FME Desktop Training Module: Data Integration
 
-This is the manual for a training module for Safe Software’s FME Desktop application. It provides a framework for a basic understanding of FME and for using FME in GIS and CAD integration.
+This is the manual for a training module for Safe Software’s FME Desktop application. It provides a framework for a basic understanding of FME and for using FME in data integration.
 
 The training will introduce basic concepts and terminology, help students become efficient users of FME, and direct them to resources to help apply the product to their own needs.
 
@@ -20,11 +20,11 @@ Finally, the **Lab Exercises** section provides hands-on activities for students
 
 ## Module Audience
 
-This module is aimed at a second- to fourth-year university or college student audience. Students should have a passing familiarity with CAD and/or GIS technology. Prior knowledge of FME is not required. If the instructor wishes to adapt the module to a higher level the lecture and lab demonstration content can be shortened.
+This module is aimed at a university or college student audience. Students should be comfortable with data manipulation software in a scripted or GUI application, e.g. CAD or GIS. Prior knowledge of FME is not required. If the instructor wishes to adapt the module to a higher level the lecture and lab demonstration content can be shortened.
 
 ## Module Length
 
-This module is designed to be delivered as an hour lecture and lab demonstration, with approximately two hours of lab exercises. The instructor may choose to cover as many of these sections as they feel are required, or possible in the time permitted. They may also cover the module content in a different order and will skip or add new content to better customize the module to your needs. Therefore, the length and content of the module may vary.
+This module is designed to be delivered as an hour lecture and lab demonstration, with approximately two hours of lab exercises. The instructor may choose to cover as many of these sections as they feel are required, or possible in the time permitted. They may also cover the module content in a different order, skip, or add new content to better customize the module to your needs. Therefore, the length and content of the module may vary.
 
 ## Adapting this Module
 
