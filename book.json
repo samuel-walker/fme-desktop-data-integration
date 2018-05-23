@@ -2,6 +2,7 @@
   "variables": {
 		"path": "https://github.com/safesoftware/FMETraining.git/",
 		"img_path": "https://github.com/safesoftware/FMETraining/blob/master/",
-		"basic_branch": "Desktop-Basic-2018"
+		"basic_branch": "Desktop-Basic-2018",
+    "basic_link": "https://safe-software.gitbooks.io/fme-desktop-basic-training-2018/content/"
 	}
 }
