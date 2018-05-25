@@ -1,12 +1,12 @@
 # FME Desktop Training Module: Data Integration
 
-This is the manual for a training module for Safe Software’s FME Desktop application. It provides a framework for a basic understanding of FME and for using FME in data integration.
+This manual is an introductory-level training module for FME Desktop. It provides a framework for a basic understanding of FME and for using FME in data integration.
 
 The training will introduce basic concepts and terminology, help students become efficient users of FME, and direct them to resources to help apply the product to their own needs.
 
 ## Module Structure
 
-The full module is made up of three main sections. These sections are:
+The module is made up of three main sections. These sections are:
 
 - Lecture
 - Lab Instruction
