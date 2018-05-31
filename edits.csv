@@ -1,0 +1,8 @@
+section,type,line_num,include
+Integration1Lecture\1.02.WhatIsFME.md,include,4,FMEDesktop
+Integration1Lecture\1.02.WhatIsFME.md,include,24,DataTranslation
+Integration1Lecture\1.03.DataTransformation.md,replace,2,DataTransformation
+Integration1Lecture\1.03.DataTransformation.md,replace,15,StructuralTransformation
+Integration1Lecture\1.03.DataTransformation.md,replace,16,""
+Integration1Lecture\1.03.DataTransformation.md,replace,17,""
+Integration1Lecture\1.03.DataTransformation.md,replace,18,""

@@ -10,6 +10,7 @@ import re # regex
 import wget # for downloading files
 import bs4 # beautifulsoup4 for scraping KC
 import subprocess # for calling pandoc from cmd
+import edits # script for making edits to downloaded content
 
 # method to split camel case string to list
 def camel_case_split(identifier):
@@ -128,3 +129,5 @@ with open('chapters.csv', 'r') as csvfile: # open csv
         summary.write(2*int(row[3])*" " + "* [" + title[5:-3] + "](" + row[8] + ")\n")
 
 summary.close() # close summary.md
+
+edits.editBook() # edit book

@@ -7,7 +7,6 @@
   * [Data Integration](Integration1Lecture/1.01.DataIntegration.md)
   * [What Is FME](Integration1Lecture/1.02.WhatIsFME.md)
   * [Data Transformation](Integration1Lecture/1.03.DataTransformation.md)
-    * [What Is Data Transformation](Integration1Lecture/1.04.WhatIsDataTransformation.md)
 * [Lab Demonstration](Integration2LabDemonstration/2.00.LabDemonstration.md)
   * [FME Desktop Components](Integration2LabDemonstration/2.01.FMEDesktopComponents.md)
   * [Introduction To Workbench](Integration2LabDemonstration/2.02.IntroductionToWorkbench.md)

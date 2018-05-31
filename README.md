@@ -9,7 +9,7 @@ The training will introduce basic concepts and terminology, help students become
 The module is made up of three main sections. These sections are:
 
 - Lecture
-- Lab Instruction
+- Lab Demonstration
 - Lab Exercises
 
 The **Lecture** section is intended to be adapted by instructors to be taught in a classroom lecture. It covers conceptual issues of data integration and provides a high-level introduction to FME. Slides are provided [here]().
