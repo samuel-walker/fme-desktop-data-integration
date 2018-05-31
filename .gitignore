@@ -17,3 +17,7 @@ _book
 
 # Test files directory
 /Test/*
+
+# Python cache
+
+/__pycache__/

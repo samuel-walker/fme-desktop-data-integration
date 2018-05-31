@@ -3,11 +3,11 @@ The best, and simplest way to apply an Inspector is to right-click the output po
 
 Here the user right-clicks the Buffered port of a Bufferer transformer and chooses the option Connect Inspector:
 
-![](./Images/Img2.036.RightClickAddInspector.png)
+![]({{ book.basic_repo }}{{ book.basic_branch }}/DesktopBasic2Transformation/Images/Img2.036.RightClickAddInspector.png)
 
 Notice that an Inspector is named automatically using the transformer and output port names. Here it will be "Bufferer_Buffered":
 
-![](./Images/Img2.036b.RightClickAddedInspector.png)
+![]({{ book.basic_repo }}{{ book.basic_branch }}/DesktopBasic2Transformation/Images/Img2.036b.RightClickAddedInspector.png)
 
 This helps to identify the data from this Inspector (as opposed to any others) in the FME Data Inspector.
 

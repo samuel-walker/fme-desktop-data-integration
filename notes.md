@@ -1,5 +1,8 @@
 # Notes
 
+## Questions
+- Remove NEW tables? Not relevant for new users.
+
 ## Updating Process
 - Edit chapters.xlsx to reflect desired book structure
 - Save as chapters.csv
