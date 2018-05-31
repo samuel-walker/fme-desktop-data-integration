@@ -18,7 +18,6 @@ def editBook(edit_file = "edits.csv"):
             with open(section, "r", encoding="utf8") as infile: # open chapter to write
                 with open(section + "_write.md", "w", encoding="utf8") as outfile: # open chapter to write
                     for index, line in enumerate(infile, start=1):
-                        print(index, line_num, line)
                         if index == line_num:
                             if type == "include": # includes just add an include
                                 print("Add line " + str(index))
