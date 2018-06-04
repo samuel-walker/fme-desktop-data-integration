@@ -32,7 +32,10 @@ def editBook(edit_file = "edits.json"):
                         type = edit["type"]
                         content = edit["content"]
                         # Make edits if on an edited line
-                        if index == line_num:
+                        if (index == line_num or
+                          (type == "delete" and
+                          index >= int(content.split("-")[0]) and
+                          index <= int(content.split("-")[1]))):
                             # Insert an include
                             if type == "insert":
                                 print("Add line " + str(index))
@@ -43,12 +46,9 @@ def editBook(edit_file = "edits.json"):
                                 line = "{% include \"../includes/" + content + ".md\" %} \n\n"
                             # Delete lines
                             elif type == "delete":
-                                print("Delete lines")
-                                if index <= int(content.split("-")[1]):
-                                    # Delete the line
-                                    print("Delete line " + str(index))
-                                    line = ""
-                        # Otherwise don't edit the line
+                                print("Delete line " + str(index))
+                                line = ""
+                        # Otherwise, don't edit the line
                         else:
                             print("Don't edit line " + str(index))
                         # Write the line with or w/o edits from above
