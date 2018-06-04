@@ -31,11 +31,19 @@ def editBook(edit_file = "edits.json"):
                         line_num = edit["line_num"]
                         type = edit["type"]
                         content = edit["content"]
+                        # set deletion lines from content
+                        if type == "delete":
+                            if "-" in content:
+                                del_start = int(content.split("-")[0])
+                                del_end = int(content.split("-")[1])
+                            else:
+                                del_start = int(content)
+                                del_end = int(content)
                         # Make edits if on an edited line
                         if (index == line_num or
                           (type == "delete" and
-                          index >= int(content.split("-")[0]) and
-                          index <= int(content.split("-")[1]))):
+                          index >= del_start and
+                          index <= del_end)):
                             # Insert an include
                             if type == "insert":
                                 print("Add line " + str(index))

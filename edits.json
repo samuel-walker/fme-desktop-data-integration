@@ -62,9 +62,19 @@
 			"content": "SetNeighborhoodsSymbology"
 		},
 		{
+			"type": "delete",
+			"line_num": 53,
+			"content": "53"
+		},
+		{
 			"type": "replace",
 			"line_num": 64,
 			"content": "SetDrawOrder"
+		},
+		{
+			"type": "delete",
+			"line_num": 65,
+			"content": "65"
 		},
 		{
 			"type": "delete",
@@ -79,7 +89,7 @@
 		},
 		{
 			"type": "replace",
-			"line_num": 150,
+			"line_num": 148,
 			"content": "Ex3Objectives"
 		}
 	]
