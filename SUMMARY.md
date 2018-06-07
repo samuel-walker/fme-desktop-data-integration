@@ -1,4 +1,4 @@
-# Summary 
+# Summary
 
 * [About This Document](Integration0About/0.00.AboutThisDocument.md)
   * [Module Overview](Integration0About/0.01.ModuleOverview.md)
@@ -46,4 +46,6 @@
     * [Exercise5](Integration3LabExercises/3.10.Exercise5.md)
     * [Exercise6](Integration3LabExercises/3.11.Exercise6.md)
     * [Data Integration Scenario](Integration3LabExercises/3.12.DataIntegrationScenario.md)
-  * [Lab Questions](Integration3LabExercises/3.13.LabQuestions.md)
+    * [Scenario Walkthrough](Integration3LabExercises/3.13.ScenarioWalkthrough.md)
+    * [Additional Procedures](Integration3LabExercises/3.14.AdditionalProcedures.md)
+  * [Lab Questions](Integration3LabExercises/3.15.LabQuestions.md)

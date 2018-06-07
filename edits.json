@@ -37,10 +37,27 @@
 		"content": "19-40"
 	}],
 	"Integration2LabDemonstration\\2.02.IntroductionToWorkbench.md": [{
-		"type": "replace",
-		"line_num": 14,
-		"content": "Canvas"
-	}],
+				"type": "replace",
+				"line_num": 14,
+				"content": "Canvas"
+		},
+		{
+				"type": "delete",
+				"line_num": 77,
+				"content": "77-108",
+		}
+	],
+	"Integration2LabDemonstration\\2.03.CreatingATranslation.md": [{
+				"type": "replace",
+				"line_num": 63,
+				"content": "FeatureTypes"
+		},
+		{
+				"type": "delete",
+				"line_num": 64,
+				"content": "64-68",
+		}
+	],
 	"Integration2LabDemonstration\\2.15.TransformationWithTransformers.md": [{
 		"type": "insert",
 		"line_num": 12,
