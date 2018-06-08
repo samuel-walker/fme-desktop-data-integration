@@ -109,10 +109,32 @@ with open('chapters.csv', 'r') as csvfile:
             with open(row[8], encoding="utf8") as md_read:
                 # Iterate on md file lines to look for image links
                 for line in md_read:
-                    # Look for images by line
+                    # Look for markdown images by line
                     if "](./" in line:
                         # Grab image filename
                         imgsplit = line.strip()[6:-1].rsplit('/', 1)[-1]
+                        # Form url
+                        url = bookpath + branch + row[0] + "/Images/" + imgsplit
+                        print("Image url is " + url)
+                        # Check if file already exists
+                        if not os.path.exists(row[5] + "/Images/" + imgsplit):
+                            # If not, download it
+                            print("Downloading image " + url)
+                            wget.download(url, row[5] + "/Images/" + imgsplit)
+                    # Look for HTML images by line (for images in tables)
+                    elif "<img src=" in line:
+                        # Grab image filename from HTML
+                        imgsplit = ""
+                        # Split by HTML tags <>
+                        tags = re.split(r'(?<=>)(.+?)(?=<)', line.strip())
+                        # Iterate over tags
+                        for i in tags:
+                            # If tag is an image tag
+                            if "img src=" in i:
+                                # Set imgsplit to the image tag
+                                imgsplit = i
+                        # Grab image file name and ending from image tag
+                        imgsplit = imgsplit.split("\"")[1].split("/")[2]
                         # Form url
                         url = bookpath + branch + row[0] + "/Images/" + imgsplit
                         print("Image url is " + url)

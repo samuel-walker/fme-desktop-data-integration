@@ -34,7 +34,7 @@ If you wish to change the content of the manual, you can fork the [GitHub reposi
 
 Some suggestions for adaptation:
 - Localize the exercise data to your country or city. A list of open data portals is available [here](https://www.opendatasoft.com/a-comprehensive-list-of-all-open-data-portals-around-the-world/).
-  - If you do change the data, feel free to modify the [Module Resources](Integration0About\0.02.CourseResources.md) page.
+  - If you do change the data, feel free to modify the [Module Resources](Integration0About\0.02.ModuleResources.md) page.
 - If it fits your course better, you could choose a single data integration scenario. If you prefer to grade close-ended questions, you could write those for one or more scenarios. You could also restrict the datasets or provide a data integration problem to solve rather then leaving it open for students to choose.
 
 ## Current Status
