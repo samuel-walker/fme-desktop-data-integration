@@ -2,6 +2,8 @@
 
 This manual is an introductory-level training module for FME Desktop. It provides a framework for a basic understanding of FME and for using FME in data integration.
 
+![](./Integration0About/Images/Img0.0.FMEAboutScreen.png)
+
 The training will introduce basic concepts and terminology, help students become efficient users of FME, and direct them to resources to help apply the product to their own needs.
 
 ## Module Structure
@@ -20,7 +22,7 @@ Finally, the **Lab Exercises** section provides hands-on activities for students
 
 ## Module Audience
 
-This module is aimed at a university or college student audience. Students should be comfortable with data manipulation software in a scripted or GUI application, e.g. CAD or GIS. Prior knowledge of FME is not required. If the instructor wishes to adapt the module to a higher level the lecture and lab demonstration content can be shortened.
+This module is aimed at a university or college student audience. Students should be comfortable with data manipulation software in a scripted or GUI environment, e.g. CAD or GIS. Prior knowledge of FME is not required. If the instructor wishes to adapt the module to a higher level the lecture and lab demonstration content can be shortened.
 
 ## Module Length
 
@@ -28,28 +30,23 @@ This module is designed to be delivered as an hour lecture and lab demonstration
 
 ## Adapting this Module
 
-All of this content is provided for instructors to use, adapt, and remix for their own modules. Please note that this use does come with some legal caveats, explained in [About this Document](/Integration0About/0.00.AboutThisDocument.md).
+All of this content is provided for instructors to use, adapt, and remix for their own modules. Please note that this use does come with some legal caveats, explained in [About this Document](.\Integration0About\0.00.AboutThisDocument.md).
 
-If you wish to change the content of the manual, you can fork the [GitHub repository](). The manual is created using the [Gitbook toolchain](https://toolchain.gitbook.com/) and is written in easily editable [Markdown](https://daringfireball.net/projects/markdown/). [Detailed instructions on adapting this content]() are also available.
+If you wish to change the content of the manual, you can fork the [GitHub repository](https://github.com/safesoftware/FMETraining/). The manual is created using the [Gitbook toolchain](https://toolchain.gitbook.com/) and is written in easily editable [Markdown](https://daringfireball.net/projects/markdown/). [Detailed instructions on adapting this content](https://docs.google.com/document/d/1N0XCvhYy2CP8x9qtANF0VKXAyK5GYMfaa6XPkyYcyi0/edit) are also available.
 
 Some suggestions for adaptation:
 - Localize the exercise data to your country or city. A list of open data portals is available [here](https://www.opendatasoft.com/a-comprehensive-list-of-all-open-data-portals-around-the-world/).
-  - If you do change the data, feel free to modify the [Module Resources](Integration0About\0.02.ModuleResources.md) page.
-- If it fits your course better, you could choose a single data integration scenario. If you prefer to grade close-ended questions, you could write those for one or more scenarios. You could also restrict the datasets or provide a data integration problem to solve rather then leaving it open for students to choose.
+  - If you do change the data, feel free to modify the [Module Resources](.\Integration0About\0.02.ModuleResources.md) page.
+- If you prefer to grade close-ended questions, you could edit the final question in the scenario exercise. You could restrict the datasets or provide a data integration problem to solve rather then leaving it open for students to choose their data.
 
 ## Current Status
 
-The current status of this manual is: **INCOMPLETE**: this manual should **NOT** be used for training.
+The current status of this manual is: **READY FOR REVIEW**: this manual **CAN** be used for training, but will be updated before official release.
 This manual applies to **FME2018.0**.
 The status of each chapter is:
 
-* Introduction: Incomplete
-* About this Document: Incomplete
-* Lecture: Incomplete
-* Lab Demonstration: Incomplete
-* Lab Exercises: Incomplete
-* Slides: Incomplete
-* Module Outline: Incomplete
-* FMEData: Incomplete
+- Lecture: Complete
+- Lab Demonstration: Complete
+- Lab Exercises: Complete
 
-_**NB**: Even for completed content, Safe Software Inc. assumes no responsibility for any errors in this document or their consequences, and reserves the right to make improvements and changes to this document without notice. See the full licensing agreement in [About this Document](/Integration0About/0.00.AboutThisDocument.md) for further details._
+_**NB**: Even for completed content, Safe Software Inc. assumes no responsibility for any errors in this document or their consequences, and reserves the right to make improvements and changes to this document without notice. See the full licensing agreement in [About this Document](.\Integration0About\0.00.AboutThisDocument.md) for further details._
