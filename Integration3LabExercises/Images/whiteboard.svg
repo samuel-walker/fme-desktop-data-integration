@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" id="svg2" viewBox="0 0 381.32 267.71" version="1.0">
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="https://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" id="svg2" viewBox="0 0 381.32 267.71" version="1.0">
   <g id="layer1" stroke-linejoin="round" stroke="#000" stroke-linecap="round" transform="translate(-131.86 -154.22)">
     <path id="path2383" stroke-width="2" stroke-dashoffset="1.5" fill="#fff" d="m147.14 156.65v248.57h353.44l2.28-250-355.72 1.43z"/>
     <path id="path2385" stroke-width="2" stroke-dashoffset="1.5" fill="#fff" d="m155.12 166.35l1.14 224.29 335.2 1.43 2.28-225.72h-338.62z"/>
@@ -26,7 +26,7 @@
       <cc:Work>
         <dc:format>image/svg+xml</dc:format>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
+        <cc:license rdf:resource="https://creativecommons.org/licenses/publicdomain/"/>
         <dc:publisher>
           <cc:Agent rdf:about="http://openclipart.org/">
             <dc:title>Openclipart</dc:title>
@@ -54,10 +54,10 @@
           </rdf:Bag>
         </dc:subject>
       </cc:Work>
-      <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
-        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
-        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
-        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+      <cc:License rdf:about="https://creativecommons.org/licenses/publicdomain/">
+        <cc:permits rdf:resource="https://creativecommons.org/ns#Reproduction"/>
+        <cc:permits rdf:resource="https://creativecommons.org/ns#Distribution"/>
+        <cc:permits rdf:resource="https://creativecommons.org/ns#DerivativeWorks"/>
       </cc:License>
     </rdf:RDF>
   </metadata>

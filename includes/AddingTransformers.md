@@ -8,7 +8,7 @@ As discussed earlier, the Transformer Gallery window allows you to browse all yo
 
 ![]({{ book.basic_repo }}{{ book.basic_branch }}/DesktopBasic4Transformers/Images/Img4.002.TransformerGallery.png)
 
-The [Transformer Gallery](https://www.safe.com/transformers) is also available online, where you can also view related transformers and sort by the most used transformers.
+The [Transformer Gallery](https://www.safe.com/transformers/) is also available online, where you can also view related transformers and sort by the most used transformers.
 
 ### Add Transformer or Quick Add
 
