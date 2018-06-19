@@ -1,12 +1,9 @@
 # Notes
 
-## Questions
-- Remove NEW tables? Not relevant for new users.
-
 ## Updating Process
 - Edit chapters.xlsx to reflect desired book structure
 - Save as chapters.csv
-- Edit edits.csv to reflect desired edits (replacement or add includes)
+- Edit edits.json to reflect desired edits (replacement or add includes)
 - Run generateChapters.py in book directory
 
 ## Manual Steps for Updating
@@ -14,6 +11,7 @@
 - generateChapters.py will successfully only download needed external sections, but currently if they already exist editing will be messed up. Basically need to generate from scratch to work.
 
 ## Improvements
+- Combine chapters.xlsx with edits.json?
 - Fix existing file issue with edits.py
 - Better documentation of scripts
 - Create functions in generateChapters.py
